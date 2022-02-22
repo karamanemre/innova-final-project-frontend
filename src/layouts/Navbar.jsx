@@ -27,7 +27,7 @@ export default function Navbar() {
           </Link>
 
           <Link to="/credit-inquiry">
-          <button className="btn btn-outline credit-apply-button" style={{marginLeft:"1rem"}}>Başvuru Sorgula</button>
+          <button className="btn btn-outline credit-apply-button application-inquire" style={{marginLeft:"1rem"}}>Başvuru Sorgula</button>
           </Link>
         </div>
 
