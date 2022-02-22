@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none !important;
+}
+
+.form-div{
+    width: 800px;
+    height: auto;
+    padding: 3rem;
+    background-color: #E8EDF0;
+    border-radius: 1rem;
+}
+
+.form-div input{
+    border-color: black;
+}
+
+.form-formik{
+    background-color: white;
+    background-image: url("../../public/img/credit-background.jpg");
+    padding: 5rem;
+}
+
+
+
+.df-jc{
+    display: flex;
+    justify-content: center;
+}
+
+.df-jb{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc-acc{
+    flex-direction: column;
+    align-content: center;
+}
+
+.line-2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-submit{
+    width: 6rem;
+}
+
+.btn-submit:hover{
+    background-color: rgb(204, 202, 206);
+    color: black;
+    border-color: rgb(204, 202, 206);;
+}
+
+
+/* Navbar */
+.top-element{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-items .item{
+    display: inline-block;
+    margin-left: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.navbar-items .item:hover{
+    transition: 0.4s;
+    cursor: pointer;
+    color: #1480A6;
+    
+}
+
+.credit-apply-button{
+    border: 1px solid white;
+    color:white;
+}
+
+.credit-apply-button:hover{
+    background-color: white;
+    color:#1480A6;
+    transition: 0.5s;
+}
+
+/* Navbar Finish*/
+
+
+/* Content */
+
+.content-main{
+    height: 35rem;
+}
+
+.slide-container{
+   border-radius: 1rem;
+   background-color: black;
+}
+
+.slide-container img{
+    height: 22rem;
+    border-radius: 1rem;
+} 
+.slide{
+    border-radius: 1rem !important;
+}
+
+.content-s2{
+    padding: 5rem;
+}
+
+.content-s2 button{
+    color: black;
+    border: 2px solid #1480A6;
+    width: 15rem !important;
+    height: 3rem;
+}
+
+.content-s2 button:hover{
+    background-color: #1480A6;
+    color: white;
+    transition: 0.4s;
+   
+}
+
+
+.content-s2 .row{
+   display: flex;
+   justify-content: space-around;
+}
+
+/* Content Finish */
+
+
+
+/* Footer */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1480A6;
+    color: white;
+   
+}
+
+.footer ul li{
+    text-decoration: none ;
+}
+
+
+/* Footer Finish*/
