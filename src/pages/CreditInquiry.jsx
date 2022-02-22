@@ -75,7 +75,7 @@ export default function CreditInquiry() {
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        <th scope="row">1.</th>
         <td>{creditInquiryItems.length>0 ? creditInquiryItems[0].identityNumber : "----"}</td>
         <td>{creditInquiryItems.length>0 ? creditInquiryItems[0].name : "----"}</td>
         <td>{creditInquiryItems.length>0 ? creditInquiryItems[0].surname : "----"}</td>

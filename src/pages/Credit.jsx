@@ -25,16 +25,13 @@ export default function Credit() {
     creditService.add(creditform).then((result) => setStatusCredit(result.data));
     loadingIcon();
     await sleep(3000);
+    console.log(getStatusCredit)
     getStatusCredit.success ? toast.success(`İşlem Başarılı`) : toast.error("İşlem Başarısız",{autoClose:1500})
   }
 
   // function showCreditInformation() {
   //   getStatusCredit.creditStatus ? toast.success(`İşlem Durumu: Onaylandı Limit: ${getStatusCredit.creditLimit}`) : toast.error("İşlem Başarısız",{autoClose:3000})
   // }
-
-
- 
- 
 
 
 
