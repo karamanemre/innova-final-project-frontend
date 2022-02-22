@@ -87,6 +87,17 @@
     transition: 0.5s;
 }
 
+.application-inquire{
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.application-inquire:hover{
+    background-color:#1B96B7;
+    color: white;
+}
+
 /* Navbar Finish*/
 
 
