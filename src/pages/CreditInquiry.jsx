@@ -17,7 +17,6 @@ export default function CreditInquiry() {
 
   function getByIdentityNumber(identityNumber) {
     dispatch(showCreditInquiry(identityNumber))
-    //alert("Kimlik No:"+creditInquiryItems[0].identityNumber + " Name :"+creditInquiryItems[0].name)
   }
 
   let initialValues = {
