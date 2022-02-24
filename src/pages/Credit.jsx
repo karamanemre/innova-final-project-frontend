@@ -11,7 +11,7 @@ import { Loader } from 'semantic-ui-react'
 
 export default function Credit() {
 
-  const [getStatusCredit, setStatusCredit] = useState({});
+  let getStatus = []
   const [open, setOpen] = React.useState(false)
   const sleep = (delay) => new Promise((resolve) =>setTimeout(resolve,delay))
 
@@ -22,11 +22,10 @@ export default function Credit() {
 
   async function saveToDatabase(creditform) {
     let creditService = new CreditService();
-    creditService.add(creditform).then((result) => setStatusCredit(result.data));
+    creditService.add(creditform).then((result) => getStatus[0].push(result.data));
     loadingIcon();
     await sleep(3000);
-    console.log(getStatusCredit)
-    getStatusCredit.success ? toast.success(`İşlem Başarılı`) : toast.error("İşlem Başarısız",{autoClose:1500})
+    getStatus[0].success ? toast.success(`İşlem Başarılı`) : toast.error("İşlem Başarısız",{autoClose:1500})
   }
 
   // function showCreditInformation() {
