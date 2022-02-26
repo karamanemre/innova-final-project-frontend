@@ -188,7 +188,7 @@
 .admin-main .card{
     width: 95%;
     margin-bottom: 2rem;
-    background-color: rgb(251, 246, 246);
+    background-color: #F7F5FB;
 }
 
 .card:hover{
@@ -197,14 +197,10 @@
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
+.creditLimit{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 .modal-window {
   position: fixed;
