@@ -26,7 +26,7 @@ export default function Navbar() {
           </Link>
 
           <Link to="/admin-panel">
-          <button className="btn btn-outline credit-apply-button application-inquire" style={{marginLeft:"1rem"}}>Sistem Girişi</button>
+          <button className="btn btn-outline credit-apply-button application-inquire" style={{marginLeft:"1rem"}}>Sil - Güncelle</button>
           </Link>
         </div>
 
