@@ -1,7 +1,7 @@
 import { useFormik, Form, Formik } from "formik";
 import * as Yup from "yup";
 import React, { useEffect, useState } from "react";
-import CreditService from "../services/creditService";
+import LoaneeService from "../services/loaneeService";
 import { Button, Header, Icon, Modal } from 'semantic-ui-react'
 import CreditResult from "./CreditResult";
 import { toast } from "react-toastify";
@@ -21,8 +21,8 @@ export default function Credit() {
  }
 
   async function saveToDatabase(creditform) {
-    let creditService = new CreditService();
-    creditService.add(creditform).then((result) => getStatus[0].push(result.data));
+    let loaneeService = new LoaneeService();
+    loaneeService.add(creditform).then((result) => getStatus.push(result.data));
     loadingIcon();
     await sleep(3000);
     getStatus[0].success ? toast.success(`İşlem Başarılı`) : toast.error("İşlem Başarısız",{autoClose:1500})

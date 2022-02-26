@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export default class CreditService{
+export default class LoaneeService{
     add(creditForm){
         return axios.post(`/api/loaneecontroller/add`,creditForm);
     }
@@ -11,6 +11,14 @@ export default class CreditService{
 
     getAll(){
         return axios.get(`/api/loaneecontroller/findAll`);
+    }
+
+    update(loanees){
+        return axios.put(`api//loaneecontroller/update`,loanees)
+    }
+
+    delete(identityNumber){
+        return axios.delete(`/api/loaneecontroller/delete?identityNumber=${identityNumber}`)
     }
 
 }

@@ -13,12 +13,7 @@ export default function Navbar() {
         </div>
 
         <div class="md-form active-cyan-2 search">
-          <input
-            class="form-control"
-            type="text"
-            placeholder="Search"
-            aria-label="Search"
-          />
+   
         </div>
 
         <div className="btn-div">
@@ -27,7 +22,11 @@ export default function Navbar() {
           </Link>
 
           <Link to="/credit-inquiry">
-          <button className="btn btn-outline credit-apply-button application-inquire" style={{marginLeft:"1rem"}}>Başvuru Sorgula</button>
+          <button className="btn btn-outline credit-apply-button" style={{marginLeft:"1rem"}}>Başvuru Sorgula</button>
+          </Link>
+
+          <Link to="/admin-panel">
+          <button className="btn btn-outline credit-apply-button application-inquire" style={{marginLeft:"1rem"}}>Sistem Girişi</button>
           </Link>
         </div>
 
@@ -37,7 +36,7 @@ export default function Navbar() {
       <div >
 
       <div className="navbar-items mt-2" style={{backgroundColor:"white"}}>
-        <div className="item" >Bireysel</div>
+        <div className="item" style={{marginLeft:"10rem"}}>Bireysel</div>
         <div className="item">Ticari</div>
         <div className="item">Kurumsal</div>
       </div>

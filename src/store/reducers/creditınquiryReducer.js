@@ -1,8 +1,8 @@
 import { creditInquiryItems } from "../initialValues/CreditInquiryItems";
-import {SHOW_CREDIT_INQUIRY} from "../actions/creditInquiryActions"
-import CreditService from "../../services/creditService";
+import {GET_ALL, SHOW_CREDIT_INQUIRY} from "../actions/creditInquiryActions"
+import LoaneeService from "../../services/loaneeService";
 
-let creditService = new CreditService();
+let loaneeService = new LoaneeService();
 
 const initialState = {
     creditInquiryItems:creditInquiryItems
@@ -11,7 +11,7 @@ const initialState = {
 export default function cartReducer(state=initialState,{type,payload}) {
     switch (type) {
         case SHOW_CREDIT_INQUIRY:
-            creditService.getByIdentityNumber(payload).then((result) => state.creditInquiryItems[0]=(result.data));
+            loaneeService.getByIdentityNumber(payload).then((result) => state.creditInquiryItems[0]=(result.data.data));
             return {
                 ...state,
                 creditInquiryItems: state.creditInquiryItems,
@@ -20,4 +20,5 @@ export default function cartReducer(state=initialState,{type,payload}) {
         default:
             return state;
     }
+  
 }

@@ -1,4 +1,5 @@
 export const SHOW_CREDIT_INQUIRY = "SHOW_CREDIT_INQUIRY"
+export const GET_ALL = "GET_ALL"
 
 export function showCreditInquiry(identityNumber){
     return{
@@ -6,3 +7,5 @@ export function showCreditInquiry(identityNumber){
         payload:identityNumber
     }
 }
+
+

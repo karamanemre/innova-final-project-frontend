@@ -5,6 +5,7 @@ import Content from "./Content";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CreditInquiry from "../pages/CreditInquiry";
+import AdminPanel from "../pages/AdminPanel";
 
 export default function Dashboard() {
   return (
@@ -14,6 +15,7 @@ export default function Dashboard() {
         <Route path="/" exact element={<Content/>}></Route>
         <Route path="/credit-application" exact element={<Credit/>}></Route>
         <Route path="/credit-inquiry" exact element={<CreditInquiry/>}></Route>
+        <Route path="/admin-panel" exact element={<AdminPanel/>}></Route>
       </Routes>
     </div>
   );
