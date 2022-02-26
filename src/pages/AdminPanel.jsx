@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { getAll } from "../store/actions/creditInquiryActions";
 import LoaneeService from "../services/loaneeService";
 import { toast } from "react-toastify";
+import { Checkbox } from "semantic-ui-react";
 
 export default function AdminPanel() {
   
@@ -18,7 +19,7 @@ export default function AdminPanel() {
     loaneeService
       .getAll()
       .then((result) => setGetAll(result.data.data));
-  },[]);
+  });
 
 
   function handleUpdatedByIdentityNumber(loanee){
@@ -30,7 +31,6 @@ export default function AdminPanel() {
     let loaneeService = new LoaneeService();
     loaneeService.delete(identityNumber)
   }
-
 
   let initialValues = {
     identityNumber: "",
@@ -59,6 +59,15 @@ export default function AdminPanel() {
     },
   });
 
+  function changedInitialValues(get){
+    values.creditLimit=get.creditLimit
+    values.creditStatus=get.creditStatus
+    values.identityNumber=get.identityNumber
+    values.monthlySalary=get.monthlySalary
+    values.name=get.name
+    values.phoneNumber=get.phoneNumber
+    values.surname=get.surname
+  }
 
   return (
     <div className="admin-panel-div">
@@ -79,7 +88,7 @@ export default function AdminPanel() {
              <button className="btn btn-danger"  onClick={()=>handleDeleteByIdentityNumber(get.identityNumber)}>Sil</button>
              <div class="container">
                <div class="interior">
-                 <a class="btn btn-primary" href="#open-modal">
+                 <a class="btn btn-primary" href="#open-modal" onClick={()=>changedInitialValues(get)}>
                    Güncelle
                  </a>
                </div>
@@ -173,7 +182,7 @@ export default function AdminPanel() {
              {errors.phoneNumber && errors.phoneNumber}</div>
            </div>
 
-           <div class="form-group">
+           <div class="form-group creditLimit">
              <label for="exampleInputEmail1">Kredi limiti</label>
              <input
                id="creditLimit"
@@ -187,6 +196,20 @@ export default function AdminPanel() {
              <div style={{color:"red"}}>
              {errors.creditLimit && errors.creditLimit}</div>
            </div>
+
+           <div class="form-group">
+             <label for="exampleInputEmail1">Kredi durumu</label>
+             <Checkbox
+              id="creditStatus"
+              onChange={handleChange}
+              name="creditStatus"
+              value={values.creditStatus}
+              />
+             <div style={{color:"red"}}>
+             {errors.creditStatus && errors.creditStatus}</div>
+           </div>
+
+       
 
            <button className="btn btn-primary mt-4 btn-submit" type="submit" style={{width:"20%"}}>
              Güncelle
