@@ -36,7 +36,7 @@ export default function Navbar() {
       <div >
 
       <div className="navbar-items mt-2" style={{backgroundColor:"white"}}>
-        <div className="item" style={{marginLeft:"10rem"}}>Bireysel</div>
+        <div className="item" style={{marginLeft:"9.45rem"}}>Bireysel</div>
         <div className="item">Ticari</div>
         <div className="item">Kurumsal</div>
       </div>
