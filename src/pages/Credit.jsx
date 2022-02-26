@@ -28,11 +28,6 @@ export default function Credit() {
     getStatus[0].success ? toast.success(`İşlem Başarılı`) : toast.error("İşlem Başarısız",{autoClose:1500})
   }
 
-  // function showCreditInformation() {
-  //   getStatusCredit.creditStatus ? toast.success(`İşlem Durumu: Onaylandı Limit: ${getStatusCredit.creditLimit}`) : toast.error("İşlem Başarısız",{autoClose:3000})
-  // }
-
-
 
   let initialValues = {
     identityNumber: "",
