@@ -95,4 +95,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-### Via; 7emre10@gmail.com
+### Via; <a src="https://www.linkedin.com/in/emre-karaman-38a362200/"> LinkedIn </a>
