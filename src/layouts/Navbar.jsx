@@ -18,7 +18,7 @@ export default function Navbar() {
 
         <div className="btn-div">
           <Link to="/credit-application">
-          <button className="btn btn-outline credit-apply-button">Kredi Başvurusu Yap</button>
+          <button className="btn btn-outline credit-apply-button">Kredi Başvurusu</button>
           </Link>
 
           <Link to="/credit-inquiry">

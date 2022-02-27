@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Slide } from "react-slideshow-image";
 
 export default function Content() {
@@ -58,7 +59,9 @@ export default function Content() {
           <div className="col-6" style={{marginTop:"5rem"}}>
             <h3 className="mb-4">Hızlı ve Kolay bir bankacılık deneyimi!</h3>
             <p>Innova ile bankacılık işlemleri 7/24 cebinizde!</p>
+            <Link to="/credit-application">
             <button className="btn btn-outline mt-4">Detaylı Bilgi</button>
+            </Link>
           </div>
           <div className="col-6">
             <img src="./img/content-s2.png" alt="" style={{width:"20rem"}} />

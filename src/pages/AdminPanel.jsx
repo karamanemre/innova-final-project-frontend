@@ -21,7 +21,7 @@ export default function AdminPanel() {
       .then((result) => setGetAll(result.data.data));
   });
 
-
+  
   function handleUpdatedByIdentityNumber(loanee){
     let loaneeService = new LoaneeService();
     loaneeService.update(loanee)
@@ -72,7 +72,7 @@ export default function AdminPanel() {
   return (
     <div className="admin-panel-div">
      <div style={{marginBottom:"2rem",marginLeft:"1rem"}}><span style={{padding:"10px",backgroundColor:"#1B96B7",color:"white",borderRadius:"15px"}}>{getAll.length} adet kişi listelendi</span> </div>
-        {getAll.map((get)=>(
+        {getAll.map((get)=>( 
         
           <div className="admin-main" key={get.id}>
            <div className="card" style={{ marginLeft: "1rem" }}>
